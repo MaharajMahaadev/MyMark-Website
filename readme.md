@@ -1,0 +1,1 @@
+This is a website which displays various stock data using websites
