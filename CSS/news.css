@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mystyle::placeholder {
+    color: red;
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+/*Disclaimer*/
+#Warning {
+    background-color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #00ff80;
+    z-index: 1;
+}
+
+
+/*Navbar*/
+.navbar {
+    /* min-width: 494px; */
+    position: sticky;
+    top: 0px;
+    background-color: peachpuff !important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 8;
+    margin-top: -7px;
+}
+
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    color: black !important;
+    padding: 0.5%;
+    border-radius: 5%;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.navbar-brand:hover {
+    color: blueviolet;
+    transition-delay: 0.05s;
+    background-color: white;
+
+}
+
+#search-box {
+    height: 40px !important;
+    margin-top: 5px;
+}
+
+#Search-logo {
+    margin-right: 5vw;
+    border-width: 4px;
+    color: white;
+    border-color: white;
+    border-radius: 20px;
+    font-size: 22px;
+}
+
+input[type="search"] {
+    width: 20vw;
+}
+
+#Profile-logo {
+    border-width: 4px;
+    border-radius: 50%;
+    color: black;
+    border-color: peachpuff
+}
+
+#user-main {
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+
+#user-name {
+    display: none;
+    position: absolute;
+    bottom: -38px;
+    right: 0px;
+    text-align: center;
+    background-color: rgb(230, 227, 227);
+    font-size: 1.5vw;
+    width: 18vw;
+    height: 38px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/*Video-section*/
+
+#inner-box {
+
+    min-height: 117vh;
+    width: 100%;
+    font-size: 11vh;
+    font-weight: 700;
+    background-image: linear-gradient(rgba(255, 0, 149, 0.5), rgb(0, 81, 255, 0.5)), url(../sources/Pictures/Re.jpg);
+    background-size: cover;
+}
+
+#inner-box p {
+    color: black;
+    text-align: center;
+    font-size: 40%;
+    padding-top: 15%;
+    font-weight: 900;
+}
+
+#inner-box button {
+    color: white;
+    background-color: peachpuff;
+    min-height: 7vh;
+    width: 10%;
+    font-size: 40%;
+    margin-left: 44%;
+    border-style: solid;
+    border-color: white;
+    background: transparent;
+}
+
+#sec1 {
+    background-color: peachpuff;
+    padding: 30px 0px 80px 20px;
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 3%;
+    font-size: 150%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Main-Body*/
+
+
+#Main-Body {
+    background-color: plum;
+    display: flex;
+    position: relative;
+    top: -30vh;
+    z-index: 2;
+    margin-bottom: -30vh;
+}
+
+#table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 70%;
+    height: 1300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+#table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+#table th,
+#table td {
+    padding: 12px 15px;
+}
+
+#table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.ntable {
+    overflow: scroll;
+}
+
+.ntitle {
+    color: red;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.nsummary {
+    font-weight: 500;
+}
+
+.nsource {
+    font-weight: 700;
+    text-decoration: underline;
+    overflow: hidden;
+}
+
+#entiren {
+    background-color: #f0f0f0;
+}
+
+#Comments {
+    background-color: #f0f0f0;
+    height: 48vw;
+    padding: 2% 4%;
+}
+
+#Comments1 {
+    background-color: #f0f0f0;
+    height: 48vw;
+    margin-bottom: 3%;
+}
+
+#Comments-inner {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 4%;
+    padding-bottom: 3%;
+    background-color: #f0f0f0;
+}
+
+.Comments {
+    padding: 3%;
+    height: 40vw;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    overflow: scroll;
+
+
+}
+
+.Comments:hover {
+    box-shadow: 0 10px 19px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.Stars {
+    color: plum;
+    width: 100%;
+}
+
+.star {
+    font-size: 1.5vw;
+}
+
+.com-prof {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
+
+#com-h {
+    font-size: 3.5vw;
+}
+
+#com-p {
+    font-size: 1.5vw;
+    color: rgb(99, 102, 104);
+}
+
+.fontSize {
+    font-size: 1.5vw;
+}
+
+.com-pp {
+    margin-top: 10px;
+}
+
+.designation {
+    color: rgb(161, 164, 167);
+    font-size: 1.33vw;
+}
+
+/*Footer*/
+footer {
+    height: auto;
+    background-color: peachpuff;
+    /* background-color: rgb(24, 23, 23,1); */
+    padding: 2% !important;
+    font-weight: bolder;
+    color: black;
+
+}
+
+.F-f3 {
+    font-size: 2.3vw;
+}
+
+.F-f2 {
+    font-size: 1.9vw;
+}
+
+.F-f {
+    font-size: 1.4vw;
+}

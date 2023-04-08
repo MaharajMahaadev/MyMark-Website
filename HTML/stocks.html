@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMark</title>
+    <link type="image/icon" href="G:\VSC-Projects\DTI-Modified-Final - Copy\sources\Pictures\Logo.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../CSS code/stocks.css">
+</head>
+
+<body>
+    <!--Disclaimer-->
+    <marquee scrollamount="14" id="Warning">Welcome Back!!!
+    </marquee>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="Page2(home page).html">MyMark</a>
+
+            <!--Search box-->
+            <ul class="nav-link">
+                <li>
+                    <div class="search-res">
+                        <input type="text" placeholder="search stock here..." id="inp" autocomplete="off">
+                        <div class="res boxShadow2"><!--boxShadow is a shadow class property-->
+                            <ul class="res-list" id="list">
+                                <li>Microsoft</li>
+                                <li>Intel</li>
+                                <li>Facebook</li>
+                                <li>Netflix</li>
+                                <li>PepsiCo</li>
+                                <li>Pfizer</li>
+                                <li>Reliance</li>
+                                <li>StarBucks Corporation</li>
+                                <li>Tesla</li>
+                                <li>Toyota Motors</li>
+                                <li>Unilever PLC</li>
+                                <li>United Parcel Service</li>
+                                <li>Visa</li>
+                                <li>Walmart Inc.</li>
+                                <li>Walt Disney</li>
+                                <li>Zoom Video</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <button class="boxShadow2" onclick="get_data(this)" id="s1"><i
+                            class="fas fa-search-dollar"></i></button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="bg1">
+        <div class="sinfo">
+            <div class="sinfo1">
+                <p class="infoval">Google</p>
+                <p class="infoval">GOOGL</p>
+                <p>Asset type</p>
+                <p class="infoval">Common Stock</p>
+                <p>Exchange</p>
+                <p class="infoval">NYSE</p>
+                <p>Currency</p>
+                <p class="infoval">USE</p>
+                <p>Country</p>
+                <p class="infoval">USA</p>
+                <p>Sector</p>
+                <p class="infoval">Technology</p>
+                <p>Industy</p>
+                <p class="infoval">Information Technology Services</p>
+            </div>
+            <div class="sinfo2">
+                <p>Address</p>
+                <p class="infoval">One New Orchard Road, Armonk, NY, United States, 10504</p> <br>
+                <p>Description</p>
+                <p class="infoval">International Business Machines Corporation provides integrated solutions and
+                    services worldwide. Its Cloud & Cognitive Software segment offers software for vertical and
+                    domain-specific solutions in health, financial services, supply chain, and asset management,
+                    weather, and security software and services application areas; and customer information control
+                    system and storage, and analytics and integration software solutions to support client mission
+                    critical on-premise workloads in banking, airline, and retail industries. It also offers middleware
+                    and data platform software, including Red Hat that enables the operation of clients' hybrid
+                    multi-cloud environments; and Cloud Paks, WebSphere distributed, and analytics platform software,
+                    such as DB2 distributed, information integration, and enterprise content management, as well as IoT,
+                    Blockchain and AI/Watson platforms</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg2">
+        <p>The Graph of the Stock</p>
+        <div class="chart-graph">
+            <div class="chart-container boxShadow">
+                <ul class="time-range boxShadow">
+                    <li>1D</li>
+                    <li>1W</li>
+                    <li>1M</li>
+                    <li>1Y</li>
+                    <li>Max</li>
+                </ul>
+                <div id="chart-overlay">
+                    <!-- <div id="gif"><img src="../pictures/Skateboarding.gif"></div> -->
+                    <div id="anime-box">
+                    </div>
+                </div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="sinfo3">
+            <p id="3sym">Symbol</p>
+            <p> , Last Update:</p>
+            <p id="3name">Name</p>
+            <table id="table">
+                <tr>
+                    <td>Open</td>
+                    <td class="itable">Open</td>
+                </tr>
+                <tr>
+                    <td>High</td>
+                    <td class="itable">High</td>
+                </tr>
+                <tr>
+                    <td>Low</td>
+                    <td class="itable">Low</td>
+                </tr>
+                <tr>
+                    <td>Close</td>
+                    <td class="itable">Close</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <span style=" color: whitesmoke;" class="F-f3"></span>
+        <h4 class="d-inline F-f2">Links:&emsp;</h4>
+        <a href="https://github.com/MaharajMahaadev">
+            <p class="fp">Github</p>
+        </a>
+        <a href="https://www.linkedin.com/in/maharaj-mahaadev-74a148225/">
+            <p class="fp">Linkedin</p>
+        </a>
+        <a href="https://drive.google.com/file/d/1JsU_fCkeYvNImjA6ob2s_xiLK7GnwBXU/view?usp=sharing">
+            <p class="fp">Resume</p>
+        </a>
+
+        <br>
+        <p class="F-f">Developed by Maharaj Mahaadev.</p>
+        <p class="F-f">For more detials check the website <a href="https://maharajmahaadev.000webhostapp.com">Link</a>
+        </p>
+        <p class="F-f">2023 MyMark All rights reserved.</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../JS code/stocks.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
