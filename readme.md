@@ -2,11 +2,11 @@
 Welcome to the MyMark website! This website provides real-time stock data using various APIs. It is built using Javascript, JQuery, HTML, and CSS.
 
 ## Features
-1. Home Page: The home page displays random stocks of top companies. It showcases the current stock prices and allows users to get a quick overview of the market.
-2. News Section: The home page also features the three most recent news articles related to the stock market. Users can stay updated with the latest developments and trends.
-3. News Page: The news page provides access to 50 latest news articles related to the stock market. Users can browse through the articles and stay informed about the latest happenings in the industry.
-4. Company Information Page: This page displays detailed information about a specific company's stock. It includes interactive graphs with different time ranges, allowing users to analyze the stock's performance over time.
-5. Search Functionality: The website features a search bar that enables users to search for a specific company's stock. By entering the company name, users can access detailed information and graphs related to that particular stock.
+1. **Home Page:** The home page displays random stocks of top companies. It showcases the current stock prices and allows users to get a quick overview of the market.
+2. **News Section:** The home page also features the three most recent news articles related to the stock market. Users can stay updated with the latest developments and trends.
+3. **News Page:** The news page provides access to 50 latest news articles related to the stock market. Users can browse through the articles and stay informed about the latest happenings in the industry.
+4. **Company Information Page:** This page displays detailed information about a specific company's stock. It includes interactive graphs with different time ranges, allowing users to analyze the stock's performance over time.
+5. **Search Functionality:** The website features a search bar that enables users to search for a specific company's stock. By entering the company name, users can access detailed information and graphs related to that particular stock.
 
 ## Installation and Usage
 Clone the repository: git clone https://github.com/your-username/MyMark-Website.git
