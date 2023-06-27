@@ -1,4 +1,5 @@
 # MyMark Website
+This project is still under process!!!
 Welcome to the MyMark website! This website provides real-time stock data using various APIs. It is built using Javascript, JQuery, HTML, and CSS.
 
 ## Features
